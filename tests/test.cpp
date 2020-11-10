@@ -40,14 +40,6 @@ TEST(RectanglePerimeter, DefaultConstructor) {
         EXPECT_EQ(0, rect1.perimeter());
 }
 
-TEST(RectanglePermimeter, Float) {
-        Rectangle rect1 = Rectangle(4.34, 7.69);
-        Rectangle rect2 = Rectangle(2.42, 2.00000086123);
-        EXPECT_NEAR(24.06, rect1.perimeter(), 1);
-        EXPECT_NEAR(8.84, rect2.perimeter(), 1);
-}
-
-
 TEST(RectangleArea, Square) {
 	Rectangle rect1 = Rectangle(4, 4);
 	Rectangle rect2 = Rectangle(20, 20);
@@ -60,13 +52,6 @@ TEST(RectangleArea, Rectangle) {
         Rectangle rect2 = Rectangle(242, 20);
         EXPECT_EQ(28, rect1.area());
         EXPECT_EQ(4840, rect2.area());
-}
-
-TEST(RectangleArea, Float) {
-	Rectangle rect1 = Rectangle(4.34, 7.69);
-        Rectangle rect2 = Rectangle(2.42, 2.00000086123);
-        EXPECT_NEAR(4.34*7.69, rect1.area(), 1);
-        EXPECT_NEAR(2.42*2.0, rect2.area(), 1);
 }
 
 TEST(RectangleArea, DefaultConstructor) {
