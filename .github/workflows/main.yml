@@ -21,8 +21,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2i
-        with:
-                submodules: recursive
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -37,3 +35,6 @@ jobs:
       # Runs written tests
       - name: Run tests
         run:    cmake . ; make ; ./test
+        uses:
+        with: 
+                submodules: recursive
