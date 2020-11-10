@@ -35,6 +35,3 @@ jobs:
       # Runs written tests
       - name: Run tests
         run:    cmake . ; make ; ./test
-        uses:
-        with: 
-                submodules: recursive
