@@ -31,7 +31,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-- name: Run tests
-run:    cmake .
-        make
-        ./test
+
+      # Runs written tests
+      - name: Run tests
+        run:    cmake .
+                make
+                ./test
