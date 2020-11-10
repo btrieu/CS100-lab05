@@ -6,7 +6,7 @@ name: CI
 # events but only for the main branch
 on:
   push:
-    branches: [ main, btrie004/ci_setup ]
+    branches: [ main, btrie004/ci_setup, btrie004/passing_tests ]
   pull_request:
     branches: [ main ]
 
@@ -31,3 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+-name: Run tests
+run:    cmake .
+        make
+        ./test
