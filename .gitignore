@@ -1,0 +1,7 @@
+test
+main_output
+
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
