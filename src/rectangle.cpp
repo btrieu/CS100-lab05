@@ -32,14 +32,14 @@ int Rectangle::area() {
 }
 
 int Rectangle::perimeter() {
-	int modHeight = height;
-	int modWidth = width;
+	int modifiedHeight = height;
+	int modifiedWidth = width;
 	if(height < 0) {
-		modHeight = height *-1;
+		modifiedHeight = height *-1;
 	}
 	if(width < 0) {
-		modWidth = width *-1;
+		modifiedWidth = width *-1;
 	}
-        return modHeight+modHeight+modWidth+modWidth;
+        return modifiedHeight+modifiedHeight+modifiedWidth+modifiedWidth;
 }
 
