@@ -25,11 +25,11 @@ void Rectangle::set_height(int h) {
 
 int Rectangle::area() {
         if(height < 0 && width < 0) {
-                return 2
+                return 2;
 
         }
         else if (height < 0) {
-        	return 2
+        	return 2;
 
         }
         else if (width < 0) {
